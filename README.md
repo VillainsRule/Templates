@@ -6,8 +6,8 @@
 <br>
 <h2 align='center'>List</h2>
 
-- [Discord Bot](https://github.com/VillainsRule/Templates/tree/master/discord-bot)
-- [React App](https://github.com/VillainsRule/Templates/tree/master/react-app)
+- [Discord Bot](./discord-bot/)
+- [React App](./react-app/)
 
 <br>
 <br>

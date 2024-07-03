@@ -1,0 +1,12 @@
+{
+    "name": "bot_name",
+    "type": "module",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "node src/main.js",
+        "dev": "nodemon -e '.js' src/main.js"
+    },
+    "dependencies": {
+        "discord.js": "^14.14.1"
+    }
+}

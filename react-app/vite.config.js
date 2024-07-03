@@ -2,17 +2,17 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-    plugins: [
-        react()
-    ],
+    plugins: [react()],
+
     resolve: {
         alias: {
             '@pages': '/src/pages',
             '@styles': '/src/styles'
         }
     },
+
     server: {
-        port: 0,
+        port: 5713,
         proxy: {
             '/api': {
                 target: 'http://localhost:0001',
@@ -24,15 +24,17 @@ export default defineConfig({
             '.module.css': 'text/css'
         }
     },
+
     css: {
         modules: {
             scopeBehaviour: 'local',
-            generateScopedName: '[hash:8]',
+            generateScopedName: '[hash:8]'
         }
     },
+
     build: {
         target: 'es2022',
-        outDir: './public',
+        outDir: './dist',
         rollupOptions: {
             output: {
                 manualChunks: (id) => {
@@ -41,8 +43,8 @@ export default defineConfig({
                 },
                 chunkFileNames: '[hash].js',
                 entryFileNames: '[hash].js',
-                assetFileNames: '[hash].[ext]',
-            },
+                assetFileNames: '[hash].[ext]'
+            }
         },
         chunkSizeWarningLimit: 1000,
         manifest: true
