@@ -6,8 +6,8 @@ export default defineConfig({
 
     resolve: {
         alias: {
-            '@pages': '/src/pages',
-            '@styles': '/src/styles'
+            'pages': '/src/pages',
+            'styles': '/src/styles'
         }
     },
 

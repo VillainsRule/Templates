@@ -1,1 +1,6 @@
+# mac conf
 **/.DS_Store
+
+# test artifacts
+node_modules/
+package-lock.json
