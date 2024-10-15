@@ -64,6 +64,3 @@ export const relativeTime = (dateNumber, prefix = true) => {
 
     return 'right now';
 }
-
-export const parseEnv = (name) =>
-    process.env[name].slice(1, -1).match(/'([a-zA-Z0-9]+)'/g).map(res => res.slice(1, -1));
